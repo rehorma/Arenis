@@ -45,6 +45,7 @@ public class JsonChannelParse {
             }
             for(country cnt:countries) {
                 ArrayList diff = czech.diff(cnt);
+                if(diff.size()<=4) continue;
                 System.out.println(diff.size()+" "+cnt.toString());
                 System.out.println("cz: "+czech.c5all);
                 System.out.println("out:"+diff.toString());
